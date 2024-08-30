@@ -33,11 +33,11 @@ pub fn lese_zahl(anweisung: &str, min: usize, max: usize) -> usize {
                     return zahl;
                 }
                 else {
-                    println!("Bitte eine Zahl zwischen {min} und {max} eingeben.");
+                    println!("Bitte eine Zahl zwischen {} und {} eingeben.", min, max);
                 }
             }
             Err(_) => {
-                println!("Es ist ein Fehler aufgetreten. Bitte eine Zahl zwischen {min} und {max} eingeben.");
+                println!("Es ist ein Fehler aufgetreten. Bitte eine Zahl zwischen {} und {} eingeben.", min, max);
             }
         }
     }
